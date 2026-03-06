@@ -1,0 +1,67 @@
+body{
+background: linear-gradient(pink, red);
+font-family: Arial;
+text-align:center;
+color:white;
+}
+
+.center{
+margin-top:150px;
+animation: fade 3s;
+}
+
+button{
+padding:12px 25px;
+font-size:18px;
+background:white;
+color:red;
+border:none;
+border-radius:20px;
+cursor:pointer;
+}
+
+button:hover{
+background:red;
+color:white;
+}
+
+@keyframes fade{
+from{opacity:0;}
+to{opacity:1;}
+}
+
+.heart{
+width:100px;
+height:100px;
+background:red;
+position:relative;
+margin:auto;
+transform: rotate(-45deg);
+animation: beat 1s infinite;
+}
+
+.heart:before,
+.heart:after{
+content:"";
+width:100px;
+height:100px;
+background:red;
+border-radius:50%;
+position:absolute;
+}
+
+.heart:before{
+top:-50px;
+left:0;
+}
+
+.heart:after{
+left:50px;
+top:0;
+}
+
+@keyframes beat{
+0%{transform:scale(1) rotate(-45deg);}
+50%{transform:scale(1.2) rotate(-45deg);}
+100%{transform:scale(1) rotate(-45deg);}
+}
