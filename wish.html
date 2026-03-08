@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+  
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Holi Wish</title>
+
+<style>
+body{
+text-align:center;
+font-family:Arial;
+background:linear-gradient(90deg,#ff4d4d,#ffcc00,#33cc33,#3399ff,#cc33ff);
+color:white;
+}
+
+h1{
+margin-top:40px;
+font-size:45px;
+}
+
+.message{
+margin:30px;
+font-size:24px;
+line-height:40px;
+}
+
+video{
+width:300px;
+border-radius:20px;
+margin-top:20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1 id="wish"></h1>
+
+<!-- Video -->
+<video controls autoplay loop>
+<source src="holi.mp4" type="video/mp4">
+</video>
+
+<div class="message">
+
+<p>May your life be filled with</p>
+
+<p>🌈 Colors of Happiness</p>
+
+<p>💖 Colors of Love</p>
+
+<p>😊 Colors of Joy</p>
+
+<p>Wishing You and Your Family</p>
+
+<p><b>A Very Happy Holi!</b></p>
+
+</div>
+
+<script>
+
+var name = localStorage.getItem("holiname");
+
+document.getElementById("wish").innerHTML = "Happy Holi " + name + " 🌈";
+
+</script>
+
+</body>
+</html>

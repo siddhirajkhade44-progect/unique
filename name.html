@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+  
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Enter Name</title>
+
+<style>
+body{
+text-align:center;
+font-family:Arial;
+background:#ffcc00;
+}
+
+h1{
+margin-top:120px;
+}
+
+input{
+padding:12px;
+font-size:18px;
+border-radius:10px;
+border:none;
+}
+
+button{
+padding:12px 25px;
+font-size:18px;
+border:none;
+border-radius:20px;
+margin-top:20px;
+cursor:pointer;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Enter Your Name</h1>
+
+<input type="text" id="username" placeholder="Your Name">
+
+<br>
+
+<button onclick="saveName()">See Wish</button>
+
+<script>
+function saveName(){
+
+var name=document.getElementById("username").value;
+
+localStorage.setItem("holiname",name);
+
+window.location.href="wish.html";
+
+}
+</script>
+
+</body>
+</html>
